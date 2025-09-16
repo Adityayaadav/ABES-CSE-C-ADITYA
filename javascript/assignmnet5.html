@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <img src="download.png" alt="" height="200px" width="200px">
+       <p id="SPACE">COUNTER APP</p>
+     <div id="count">0</div>
+  <button onclick="increase()">+</button>
+  <button onclick="decrease()">-</button>
+
+  <script>
+    let count = 0;
+    const display = document.getElementById("count");
+
+    function increase() {
+      if (count < 10) {
+        count++;
+        display.innerText = count;
+      } else {
+        alert("Maximum Limit 10");
+      }
+    }
+
+    function decrease() {
+      if (count > 0) {
+        count--;
+        display.innerText = count;
+      } else {
+        alert("Minimum Limit 0");
+      }
+    }
+  </script>
+    </div>
+    
+
+</body>
+</html>
